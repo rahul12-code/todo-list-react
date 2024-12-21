@@ -10,6 +10,7 @@ const Buttons = ({ inputValue, displayTodos, setInputValue, submitButton }) => {
             ? "bg-blue-800 transition-transform duration-200 hover:scale-110"
             : "bg-gray-700 bg-opacity-65 cursor-not-allowed"
         }`}
+        disabled={inputValue===""?true:false}
       >
         {submitButton ? "Submit" : "Update"}
       </button>
